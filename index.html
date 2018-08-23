@@ -22,6 +22,17 @@
 <body>
   <app-root></app-root>
 
-<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.2f4a59095805af02bd79.js"></script><script type="text/javascript" src="main.4fc758f274399e21d2d4.js"></script></body>
-
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.2f4a59095805af02bd79.js"></script><script type="text/javascript" src="main.74f4f365583603b966f8.js"></script></body>
+<script>
+    header = $('#header').height();
+    $(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    if(scroll >= header){
+      $('#fixed').addClass('fixed-menu');
+    }else{
+      $('#fixed').removeClass('fixed-menu');
+    }
+});
+  
+</script>
 </html>
