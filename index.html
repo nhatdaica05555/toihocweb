@@ -21,9 +21,13 @@
 <body>
   <app-root></app-root>
 
-<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.2f4a59095805af02bd79.js"></script><script type="text/javascript" src="main.f9ea6e3bf8964574bc94.js"></script></body>
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.2f4a59095805af02bd79.js"></script><script type="text/javascript" src="main.57a9ba9e99a726597cb4.js"></script></body>
 
    <script>
 header=$('#header').height();parent=$('.fixed').parent().closest('div');$(window).resize(function(){parent=$('.fixed').parent().closest('div');header=$('#header').height();parent=$('.fixed').parent().closest('div');var width=$(parent).width();$('.fixed').width(width)});$(window).scroll(function(event){parent=$('.fixed').parent().closest('div');var scroll=$(window).scrollTop();width=$(parent).width();if(scroll>=header){$('.fixed').addClass('fixed-menu')}else{$('.fixed').removeClass('fixed-menu')}$('.fixed').width(width)});
+   $('#close').click(function (e) { 
+     e.preventDefault();
+     $('#listuser').slideToggle();
+   });
    </script>
 </html>
